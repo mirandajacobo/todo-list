@@ -1,86 +1,26 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #f9d423, #ff4e50);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: fondo 10s ease infinite alternate;
-  }
-  
-  @keyframes fondo {
-    0% { background: linear-gradient(135deg, #f9d423, #ff4e50); }
-    100% { background: linear-gradient(135deg, #ff4e50, #f9d423); }
-  }
-  
-  .cartel {
-    background-color: #fff;
-    padding: 50px;
-    border-radius: 30px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    max-width: 600px;
-    animation: entrada 1s ease-in-out;
-  }
-  
-  @keyframes entrada {
-    from {
-      opacity: 0;
-      transform: scale(0.8);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  .icono {
-    font-size: 60px;
-    margin-bottom: 20px;
-    animation: girar 3s linear infinite;
-  }
-  
-  @keyframes girar {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  .cartel h1 {
-    font-size: 48px;
-    color: #ff4e50;
-    margin-bottom: 10px;
-  }
-  
-  .cartel p {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 30px;
-  }
-  
-  .cargando {
-    width: 100%;
-    background-color: #ddd;
-    border-radius: 20px;
-    overflow: hidden;
-    height: 20px;
-  }
-  
-  .barra {
-    height: 100%;
-    width: 0%;
-    background-color: #ff4e50;
-    animation: llenar 3s infinite;
-  }
-  
-  @keyframes llenar {
-    0% { width: 0%; }
-    50% { width: 100%; }
-    100% { width: 0%; }
-  }
-  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+
+}
+
+html{
+  font-size: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100%;
+}
+
+:root{
+  --color-rojo:red; 
+  --color-verde: green;
+  --color-amarillo: yellow; 
+
+  --titulo-h1:2.6rem;
+  --titulo-h2: 1.8rem ;
+  --titulo-h3: 16rem;
+  --parrafo:14em;
+  --spam: 12rem
+}

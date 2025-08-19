@@ -1,0 +1,161 @@
+.tarea {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    transition: transform 0.2s ease;
+  }
+  
+  .tarea:hover {
+    transform: translateY(-2px);
+  }
+  
+  .tarea-numero {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #3498db;
+    font-size: 14px;
+  }
+  
+  .tarea-titulo {
+    flex: 1 1 100%;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .tarea-estado {
+    border-radius: 12px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .estado-verde {
+    background-color: #d4f4d7;
+    color: #2e7d32;
+    border: 1px solid #2ecc71;
+  }
+  
+  .estado-borde {
+    background-color: transparent;
+    color: #3498db;
+    border: 1px solid #3498db;
+  }
+  
+  .estado-gris {
+    background-color: #f0f0f0;
+    color: #555;
+    border: 1px solid #ccc;
+  }
+  
+  .tarea-fecha {
+    font-size: 13px;
+    color: #666;
+    white-space: nowrap;
+  }
+  
+  .tarea-integrantes {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .integrante {
+    border: 2px solid #3498db;
+    border-radius: 50%;
+    background-color: #ecf5fd;
+    color: #2c3e50;
+    padding: 6px;
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .tarea-eliminar {
+    color: #e74c3c;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .tarea-eliminar:hover {
+    transform: scale(1.2);
+  }
+  
+  .resaltado {
+    border: 2px solid #f1c40f;
+    background-color: #fffde7;
+  }
+  
+  @media (max-width: 768px) {
+    .tarea {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .tarea-titulo {
+      font-size: 15px;
+    }
+  
+    .tarea-numero,
+    .tarea-estado,
+    .tarea-fecha,
+    .tarea-integrantes,
+    .tarea-eliminar {
+      margin-top: 6px;
+    }
+  
+    .tarea-eliminar {
+      align-self: flex-end;
+    }
+  
+    .tarea-estado {
+      font-size: 12px;
+      padding: 5px 12px;
+    }
+  
+    .tarea-fecha {
+      font-size: 12px;
+    }
+  
+    .integrante {
+      font-size: 14px;
+      width: 28px;
+      height: 28px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tarea {
+      padding: 15px;
+    }
+  
+    .tarea-titulo {
+      font-size: 14px;
+    }
+  
+    .tarea-eliminar {
+      font-size: 18px;
+    }
+  
+    .tarea-estado {
+      padding: 4px 10px;
+    }
+  }
