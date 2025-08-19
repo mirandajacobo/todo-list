@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Estilos Generales y Contenedor Principal */
+body {
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: #eef2f6; /* Nuevo color de fondo */
+    font-family: 'Poppins', sans-serif; /* Nueva fuente */
+    color: #334155;
+}
+
+.vista-dashboard {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Panel central */
+.panel-central {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Panel de tareas (Tabla) */
+.panel-tareas {
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra más suave */
+    flex: 2;
+    overflow-x: auto; /* Para tablas en móviles */
+}
+
+/* Tabla */
+.tabla-asignaciones {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.tabla-asignaciones th,
+.tabla-asignaciones td {
+    padding: 14px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0; /* Líneas más claras */
+}
+
+.tabla-asignaciones th {
+    background-color: #f8fafc; /* Fondo de encabezado más claro */
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+}
+
+.fila-tarea:hover {
+    background-color: #f1f5f9; /* Efecto hover en las filas */
+    transition: background-color 0.3s ease;
+}
+
+.fila-tarea:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+/* Estados (Pendiente, En progreso, Completado) */
+.estado-label {
+    padding: 6px 14px;
+    border-radius: 999px; /* Forma de píldora */
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.estado-pendiente {
+    background-color: #fecaca;
+    color: #ef4444;
+}
+
+.estado-progreso {
+    background-color: #fde68a;
+    color: #d97706;
+}
+
+.estado-finalizado {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+/* Íconos de equipo */
+.grupo-emojis {
+    display: flex;
+    gap: 6px;
+}
+
+.icono-equipo {
+    font-size: 16px;
+}
+
+/* Botón de eliminar */
+.boton-eliminar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #e74c3c;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.boton-eliminar:hover {
+    transform: scale(1.2);
+    color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .vista-dashboard {
+        padding: 16px;
+        gap: 16px;
+    }
+    .panel-central {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .panel-tareas {
+        padding: 16px;
+    }
+    .tabla-asignaciones th, .tabla-asignaciones td {
+        padding: 10px;
+        font-size: 12px;
+    }
+}

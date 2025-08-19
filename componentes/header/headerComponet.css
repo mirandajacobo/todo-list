@@ -1,0 +1,59 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.status-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f1f5f9;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+}
+
+.user-emoji {
+    font-size: 20px;
+}
+
+.task-text {
+    font-weight: 600;
+    color: #334155;
+}
+
+.task-count {
+    background-color: #ef4444;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 12px 16px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .status-box {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
